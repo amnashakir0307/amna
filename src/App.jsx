@@ -14,6 +14,7 @@ import State from './Components/State';
 import Ai from './Components/Ai';
 import LCS from './Components/LCS';
 import Orderform from './Components/Orderform';
+import Banner from './Components/Banner';
 
 const Home = () => {
   return (
@@ -21,13 +22,16 @@ const Home = () => {
       <div id="hero"><Hero /></div>
       <div id="state"><State /></div>
       <div id="about"><About /></div>
-      <div id="deal"><Deal /></div>
+     
       <div id="why-us"><WH /></div>
+       <div id="Banner"><Banner /> </div>
       <div id="ai"><Ai /></div>
       <div id="faq"><FAQ /></div>
-      <div id="location"><LCS /></div>
+    
+      <div id="deal"><Deal /></div>
       <div id="order-form"><Orderform /></div>
       <div id="contact"><Order /></div>
+         <div id="location"><LCS /></div>
     </>
   );
 };

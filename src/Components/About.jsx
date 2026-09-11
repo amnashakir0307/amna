@@ -9,7 +9,7 @@ export default function AboutUs() {
     <section className="about-us-section" id="about">
       <div className={`about-container ${isRtl ? 'rtl' : 'ltr'}`}>
         
-        {/* Left Side: Full Image Box with zero extra padding/space */}
+        {/* Left Side: Image Box with background image */}
         <div className="about-image-box">
           <img src="/image_9.png" alt="Al Saqar Spare Parts Showroom" />
         </div>
@@ -31,6 +31,7 @@ export default function AboutUs() {
               target="_blank" 
               rel="noopener noreferrer" 
               className="contact-btn"
+              aria-label="Contact Al-Saqar via WhatsApp"
             >
               💬 {t('contactBtnText')}
             </a>
@@ -42,8 +43,13 @@ export default function AboutUs() {
       <style jsx>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+        /* Main Section Background with a wallpaper/image overlay */
         .about-us-section {
-            background-color: #000000;
+            background-color: #ffffff;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('/about-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             padding: 80px 20px;
             font-family: 'Inter', sans-serif;
             width: 100%;
@@ -70,13 +76,12 @@ export default function AboutUs() {
             text-align: left;
         }
 
-        /* Full Image Box: No internal padding, image fits edge-to-edge with background option */
+        /* Left Inner Div with Image and background wallpaper layer */
         .about-image-box {
             flex: 1;
             width: 100%;
             max-width: 580px;
-            background-color: #111111;
-            /* Optional background image fallback layer or container background */
+            background-color: #ffffff;
             background-image: url('/about.jpg');
             background-size: cover;
             background-position: center;
@@ -84,8 +89,8 @@ export default function AboutUs() {
             display: flex;
             align-items: stretch;
             justify-content: stretch;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-            border: 1px solid #222222;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e5e7eb;
             box-sizing: border-box;
             overflow: hidden;
             padding: 0;
@@ -103,16 +108,16 @@ export default function AboutUs() {
             padding: 0;
         }
 
-        /* Text Box */
+        /* Right Inner Div with White Theme & Black/Red details */
         .about-text-box {
             flex: 1;
             width: 100%;
             max-width: 580px;
-            background-color: #0b0b0b;
+            background-color: #ffffff;
             padding: 40px;
             border-radius: 16px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-            border: 1px solid #222222;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e5e7eb;
             border-left: 6px solid #e60000;
             display: flex;
             flex-direction: column;
@@ -123,7 +128,7 @@ export default function AboutUs() {
         }
 
         .rtl .about-text-box {
-            border-left: 1px solid #222222;
+            border-left: 1px solid #e5e7eb;
             border-right: 6px solid #e60000;
         }
 
@@ -138,35 +143,35 @@ export default function AboutUs() {
             font-size: 32px;
             font-weight: 800;
             margin-bottom: 20px;
-            color: #ffffff;
+            color: #000000; /* Black heading */
             letter-spacing: -0.03em;
             text-align: center;
             width: 100%;
         }
 
         .about-text-box h2 span {
-            color: #e60000;
+            color: #e60000; /* Red highlight for main words */
         }
 
         .about-text-box p {
             font-size: 15px;
             line-height: 1.75;
             margin-bottom: 16px;
-            color: #d1d5db;
+            color: #333333; /* Black/Dark gray for paragraph text */
             font-weight: 400;
             text-align: center;
             max-width: 95%;
         }
 
         .about-text-box strong {
-            color: #ffffff;
+            color: #000000;
             font-weight: 600;
         }
 
         .about-contact-info {
             margin-top: 25px;
             padding-top: 20px;
-            border-top: 1px solid #262626;
+            border-top: 1px solid #f0f0f0;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -181,7 +186,7 @@ export default function AboutUs() {
             text-align: center;
             gap: 6px;
             font-size: 14px;
-            color: #9ca3af;
+            color: #555555;
             font-weight: 500;
             width: 100%;
         }
@@ -190,7 +195,7 @@ export default function AboutUs() {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background-color: #25D366;
+            background-color: #e60000; /* Red theme button matching highlights */
             color: #ffffff;
             padding: 12px 28px;
             border-radius: 8px;
@@ -200,16 +205,15 @@ export default function AboutUs() {
             letter-spacing: 0.02em;
             text-align: center;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            box-shadow: 0 4px 15px rgba(230, 0, 0, 0.25);
         }
 
         .contact-btn:hover {
-            background-color: #1ebe57;
+            background-color: #cc0000;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            box-shadow: 0 6px 20px rgba(230, 0, 0, 0.35);
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
             .about-us-section {
                 padding: 30px 10px;

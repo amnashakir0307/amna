@@ -12,6 +12,10 @@ const resources = {
       contact: "CONTACT US",
       welcomeText: "Welcome to Al-Saqar spare parts your trusted destination for genuine car and truck components. Specializing in high-quality parts for 4-wheelers and 6-wheelers, backed by our 100% durability and performance. Drive with confidence, drive with Al-Saqar!..",
       
+      bannerBadge: "Quality Spare Parts",
+      bannerImageTitle: "From nuts and bolts to peak performance – We have the parts you need.",
+      bannerTagline: "From nuts and bolts to peak performance – We have the parts you need.",
+
       aboutTitle: "About",
       aboutTitleHighlight: "Al Saqar",
       aboutText1: "Located in the heart of Saudi Arabia, Al Saqar is a trusted and reliable hub for genuine auto parts catering to 4-wheel and 6-wheel vehicles. We supply a comprehensive inventory of body parts, engine parts, and suspension components for top international brands including Isuzu, Mitsubishi, MG, and Changan.",
@@ -71,6 +75,9 @@ const resources = {
       placeholderPartDetails: "Describe the spare part you need (e.g., front brake pads, radiator assembly)...",
       whatsappButtonText: "Send Order To WhatsApp",
 
+      trustBannerBadge: "Al-Saqar Guarantee",
+      trustBannerTitle: "Trust in quality, rely on us – Your partner for long-lasting vehicle performance.",
+
       orderTagline: "SIMPLE & FAST PROCESS",
       orderHeadingPrefix: "HOW TO",
       orderHeadingHighlight: "ORDER YOUR PARTS",
@@ -123,7 +130,6 @@ const resources = {
         }
       ],
 
-      // Added LocationContactSection Translations (English)
       getInTouchTitlePart1: "GET IN",
       getInTouchTitlePart2: "TOUCH & LOCATION",
       visitOurOffice: "Visit Our Office",
@@ -145,6 +151,10 @@ const resources = {
       faq: "الأسئلة الشائعة",
       contact: "اتصل بنا",
       welcomeText: "أهلاً بكم في قطع غيار الصقر، وجهتكم الموثوقة لقطع غيار السيارات والشاحنات الأصلية. متخصصون في قطع غيار عالية الجودة للسيارات الرباعية والشاحنات، مع ضمان الجودة والمتانة بنسبة 100%. إحفظ وثوقك في السواق، وسوق مع الصقر!...",
+
+      bannerBadge: "قطع غيار عالية الجودة",
+      bannerImageTitle: "من الصواميل والمسامير إلى الأداء الأقصى – لدينا القطع التي تحتاجها.",
+      bannerTagline: "من الصواميل والمسامير إلى الأداء الأقصى – لدينا القطع التي تحتاجها.",
 
       aboutTitle: "نبذة عن",
       aboutTitleHighlight: "الصقر",
@@ -205,6 +215,9 @@ const resources = {
       placeholderPartDetails: "صف قطعة الغيار التي تحتاجها (مثل: تيل بريك أمامي، ردياتير)...",
       whatsappButtonText: "إرسال الطلب إلى واتساب",
 
+      trustBannerBadge: "ضمان الصقر",
+      trustBannerTitle: "ثق في الجودة واعتمد علينا – شريكك لأداء طويل الأمد للسيارات.",
+
       orderTagline: "عملية بسيطة وسريعة",
       orderHeadingPrefix: "كيفية",
       orderHeadingHighlight: "طلب قطع الغيار",
@@ -257,7 +270,6 @@ const resources = {
         }
       ],
 
-      // Added LocationContactSection Translations (Arabic)
       getInTouchTitlePart1: "ابق على",
       getInTouchTitlePart2: "اتصال وموقعنا",
       visitOurOffice: "زوروا مكتبنا",

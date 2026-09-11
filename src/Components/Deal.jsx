@@ -4,7 +4,7 @@ const brandsData = [
   { id: 1, name: 'ISUZU', logo: '/isuzu.jpg' },
  
   { id: 3, name: 'MG', logo: '/mg.jpg' },
-  { id: 4, name: 'HYUNDAI', logo: '/hundai.jpg' },
+  // { id: 4, name: 'HYUNDAI', logo: '/hundai.jpg' },
   { id: 5, name: 'CVHANGAN', logo: '/changan.jpg' },
   { id: 2, name: 'MITSUBISHI', logo: '/mitsubihi.jpg' },
   // Aap mazeed brands yahan add kar sakte hain
